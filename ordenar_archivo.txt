@@ -217,6 +217,11 @@ IF EXIST *.7z (
 mkdir "comprimidos/7z"
  move /Y *.7z "comprimidos/7z"
 )
+IF EXIST *.iso (
+
+mkdir "comprimidos/iso"
+ move /Y *.iso "comprimidos/iso"
+)
 
 IF EXIST *.jpg (
 
