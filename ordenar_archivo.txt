@@ -1,6 +1,6 @@
-echo on
-echo "hola"
-color 0A
+@echo off
+cls
+:start
 
 IF EXIST *.exe (
 
@@ -217,11 +217,6 @@ IF EXIST *.7z (
 mkdir "comprimidos/7z"
  move /Y *.7z "comprimidos/7z"
 )
-IF EXIST *.iso (
-
-mkdir "comprimidos/iso"
- move /Y *.iso "comprimidos/iso"
-)
 
 IF EXIST *.jpg (
 
@@ -275,4 +270,10 @@ del /Q *.architect~
 mkdir "documentos\sql_archited"
  move /Y *.architect "documentos\sql_archited"
 )
- 
+echo TE AYUDO ESTE PROGRAMA BAT O NO SE PUDO COMPRIMIR TUS ARCHIVOS
+  
+set /p num=SI TE AYUDO MARCA (0) Y SINO PUDO COMPROMIR APLASTA (1):
+If %num%==1 echo Esto ayudara para los  demas para  hacer el proceso de respaldo mas rapido pause start https://github.com/bryanpumax/ordenar_archivos_terminal/issues
+If %num%==0 exit
+echo.MUCHAS GRACIAS
+pause
