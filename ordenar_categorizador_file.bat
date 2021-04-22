@@ -1,6 +1,6 @@
-echo on
-echo "hola"
-color 0A
+@echo off
+cls
+:start
 
 IF EXIST *.exe (
 
@@ -270,4 +270,9 @@ del /Q *.architect~
 mkdir "documentos\sql_archited"
  move /Y *.architect "documentos\sql_archited"
 )
- 
+echo TE AYUDO ESTE ACTIVIDAD  O NO SE PUDO COMPRIMIR TUS ARCHIVOS  
+set /p num=SI TE AYUDO MARCA (0) Y SINO PUDO COMPROMIR APLASTA (1):
+If %num%==1 start https://github.com/bryanpumax/ordenar_archivos_terminal/issues
+If %num%==0 exit
+echo.MUCHAS GRACIAS
+pause
