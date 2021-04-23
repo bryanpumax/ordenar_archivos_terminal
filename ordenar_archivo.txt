@@ -270,6 +270,17 @@ del /Q *.architect~
 mkdir "documentos\sql_archited"
  move /Y *.architect "documentos\sql_archited"
 )
+IF EXIST *.mp4 (
+
+mkdir "documentos/multimedia/mp4"
+ move /Y *.mp4 "documentos/multimedia/mp4"
+)
+IF EXIST *.ts (
+
+mkdir "documentos/multimedia/ts"
+ move /Y *.ts "documentos/multimedia/ts
+)
+
 echo TE AYUDO ESTE PROGRAMA BAT O NO SE PUDO COMPRIMIR TUS ARCHIVOS
   
 set /p num=SI TE AYUDO MARCA (0) Y SINO PUDO COMPROMIR APLASTA (1):
