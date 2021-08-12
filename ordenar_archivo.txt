@@ -217,7 +217,11 @@ IF EXIST *.7z (
 mkdir "comprimidos/7z"
  move /Y *.7z "comprimidos/7z"
 )
+IF EXIST *.iso (
 
+mkdir "comprimidos/iso"
+ move /Y *.iso "comprimidos/iso"
+)
 IF EXIST *.jpg (
 
 mkdir "fotos"
@@ -269,6 +273,11 @@ IF EXIST *.architect (
 del /Q *.architect~
 mkdir "documentos\sql_archited"
  move /Y *.architect "documentos\sql_archited"
+)
+IF EXIST *.sql (
+ 
+mkdir "documentos\sql"
+ move /Y *.sql "documentos\sql"
 )
 IF EXIST *.mp4 (
 
