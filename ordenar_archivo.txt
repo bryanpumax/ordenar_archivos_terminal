@@ -284,6 +284,12 @@ IF EXIST *.mp4 (
 mkdir "documentos/multimedia/mp4"
  move /Y *.mp4 "documentos/multimedia/mp4"
 )
+
+IF EXIST *.mp3 (
+
+mkdir "documentos/multimedia/mp3"
+ move /Y *.mp3 "documentos/multimedia/mp3"
+)
 IF EXIST *.ts (
 
 mkdir "documentos/multimedia/ts"
